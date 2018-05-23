@@ -8,8 +8,7 @@
 
 const solution = (num, str, i=0, newStr="") => {
   if (i === num) return newStr;
-  newStr += str;
- return solution(num, str, i+1, newStr);
+ return solution(num, str, i+1, newStr + str);
 }
 
 module.exports = {
