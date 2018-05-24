@@ -6,7 +6,12 @@
  */
 
 const solution = (a, b) => {
-  return 0;
+  if(i>=a || i>=b){
+    return i;
+  }
+  if(a%i==0 && b%i==0){
+    return i;
+  }
 };
 
 module.exports = {
