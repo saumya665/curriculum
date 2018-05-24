@@ -6,7 +6,7 @@
  */
 
 const solution = (num, i=2,sum=0) => {
-  if(i===num) { return sum};
+  if(i>=num) { return sum};
   if(num%i === 0){ sum+=i; }
   return solution(num, i+1, sum);
 };
