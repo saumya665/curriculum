@@ -16,7 +16,6 @@ const solution = (num, i=2) => {
   return solution (num, i+1);
 };
 
-console.log(solution(1));
 module.exports = {
   solution,
 };
