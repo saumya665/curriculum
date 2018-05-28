@@ -6,7 +6,7 @@
  */
 
 const solution = (num, funct) => {
-  if (num === 0) { return };
+  if (num === 0)  return;
   funct();
   return solution(num-1, funct);
 };
