@@ -5,14 +5,14 @@
  * @returns {number}
  */
 
-const solution = (a, b, i=0, ans=0) => {
-  if(i>=a || i>=b){
-    return i;
+const solution = (a, b, i=2, ans=1) => {
+  if (i>a || i>b) {
+    return ans;
   }
-  if(a%i==0 && b%i==0){
-    ans=i;
+  if (a%i == 0 && b%i == 0) {
+     ans=i;
   }
-  return solution(a,b,i+1,ans);
+  return solution(a, b, i+1, ans);
 };
 
 module.exports = {
