@@ -10,15 +10,10 @@ const solution = (a, b, c) => {
   if(a>b && a>c) {
     return a;
   }
-  if(a>b && b<c){
-    return c;
-  }
   if(a<b && b>c){
     return b;
   }
-  if(c>a && c>b){
-    return c;
-  }
+  return c;
 }
 
 module.exports = {
