@@ -14,12 +14,12 @@
  * @returns {number}
 */
 
-const solution = (a, max=a.v)=>{
-  if (!a.next) return max;
-  if (a.v > max) {
-    max = a.v
+const solution = (node, max=node.v)=>{
+  if (node.next === null) return max;
+  if (node.v > max) {
+    max = node.v;
   }
-  return solution(a.next, max);
+  return solution(node.next, max);
 };
 
 
