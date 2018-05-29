@@ -9,8 +9,12 @@
  * @returns {object} c
 */
 
-const solution = (a, b)=>{
-  return c;
+const solution = (obj, func, keys = Object.keys(obj),values = Object.values(obj), i=0, newObj={})=>{
+  if (i === keys.length) return newObj;
+  if (func(Object.entries(obj)[i]) === TRUE) {
+    newObj.keys[i] = values[i]; 
+  }
+  return solution(obj, func, keys, values, i+1, newObj);
 };
 
 module.exports = {
