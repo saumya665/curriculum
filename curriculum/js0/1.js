@@ -8,6 +8,8 @@
 const solution = (a, b) => {
   return a+b;
 };
+console.log(solution(2,3));
+console.log(solution(5,5));
 
 module.exports = {
   solution,
